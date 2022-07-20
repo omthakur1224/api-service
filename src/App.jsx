@@ -6,7 +6,7 @@ function App() {
   const [count, setCount] = useState(0)
   const [data,setData]=useState([])
   const handleClick=()=>{
-    fetch("http://localhost:5555/articles")
+    fetch("http://localhost:8080/articles")
     .then((res)=>setData(res.data))
   }
   return (
